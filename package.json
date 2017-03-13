@@ -1,0 +1,26 @@
+{
+  "name": "journal",
+  "version": "1.0.0",
+  "description": "a journal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccbpeden/js-wk1-day1-further-practice.git"
+  },
+  "keywords": [
+    "secrets"
+  ],
+  "author": "Michaela Davis & Charles Peden",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ccbpeden/js-wk1-day1-further-practice/issues"
+  },
+  "homepage": "https://github.com/ccbpeden/js-wk1-day1-further-practice#readme",
+  "devDependencies": {
+    "browserify": "^14.1.0",
+    "gulp": "^3.9.1"
+  }
+}

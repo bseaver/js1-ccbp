@@ -3,9 +3,8 @@ function Journal(title, body) {
   this.body = body;
 }
 
-function newEntry() {
-  var output = [this.title, this.body];
-  return output;
-}
+Journal.prototype.entry = function() {
+  return [this.title, this.body];
+};
 
-exports.journalModule = Journal;
+module.exports.journal = Journal;

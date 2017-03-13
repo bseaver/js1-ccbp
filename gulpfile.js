@@ -18,21 +18,21 @@ gulp.task('concatInterface', function() {
   .pipe(gulp.dest('./tmp'));
 });
 
-gulp.task('jsBrowserify', ['concatInterface'], function(){
+gulp.task('jsBrowserify', ['concatInterface'], function() {
   return browserify({ entries: ['./tmp/allConcat.js'] })
-  .bundle()
-  .pipe(source('app.js'))
-  .pipe(gulp.dest('./build/js'));
+    .bundle()
+    .pipe(source('app.js'))
+    .pipe(gulp.dest('./build/js'));
 });
 
 gulp.task("minifyScripts", ["jsBrowserify"], function(){
   return gulp.src("./build/js/app.js")
-  .pipe(uglify())
-  .pipe(gulp.dest("./build/js"));
+    .pipe(uglify())
+    .pipe(gulp.dest("./build/js"));
 });
 
-gulp.task("build", ['clean'], function (){
-  if(buildProduction) {
+gulp.task("build", ['clean'], function(){
+  if (buildProduction) {
     gulp.start('minifyScripts');
   } else {
     gulp.start('jsBrowserify');
@@ -41,6 +41,6 @@ gulp.task("build", ['clean'], function (){
 
 gulp.task('jshint', function(){
   return gulp.src(['js/*.js'])
-  .pipe(jshint())
-  .pipe(jshint.reporter('default'));
-})
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'));
+});

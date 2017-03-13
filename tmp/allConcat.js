@@ -6,11 +6,13 @@ $(document).ready(function() {
     var title = $('#title').val();
     var body = $('#body').val();
     var newEntry = new Journal(title, body);
-    console.log(title, body);
     var output = newEntry.entry();
-    console.log("still here?");
     output.forEach(function(element) {
       $('#printed_entry').append("<li>" + element + "</li>");
     });
   });
+});
+
+$(document).ready(function(){
+  $('#time').text(moment());
 });

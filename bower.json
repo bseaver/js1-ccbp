@@ -1,0 +1,25 @@
+{
+  "name": "journal",
+  "description": "a journal",
+  "main": "index.js",
+  "authors": [
+    "Jennifer Beem & Charles Peden"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "secrets"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "moment": "^2.17.1"
+  }
+}

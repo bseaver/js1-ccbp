@@ -9,6 +9,48 @@
 
 _A journaling website where a user can write entries including body and title._
 
+
+npm init
+
+npm install gulp --save-dev
+
+npm install browserify --save-dev
+
+npm install gulp-concat --save-dev
+
+npm install gulp-uglify --save-dev
+
+npm install gulp-util --save-dev
+
+npm install del --save-dev
+
+npm install jshint --save-dev
+
+npm install vinyl-source-stream --save-dev
+
+bower install jquery --save
+
+bower install bootstrap --save
+
+bower install moment --save
+
+gulp bower
+
+npm install bower-files --save-dev
+
+npm install gulp-jshint --save-dev
+
+gulp jsBrowserify
+
+
+gulp jshint
+
+npm install browser-sync --save-dev
+
+recreate .env file in topmost project folder level with api key from openweather.org site user ccbpeden@warpmail.net
+
+exports.apiKey = "xxxxxxxxxxxxx";
+
 ## Specifications
 *Some will exist*
 

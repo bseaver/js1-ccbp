@@ -1,7 +1,7 @@
 var apiKey = require('./../.env').apiKey;
 
 Weather = function(){
-}
+};
 
 Weather.prototype.getWeather = function(city, displayFunction) {
   $.get('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + apiKey).then(function(response) {
@@ -9,6 +9,6 @@ Weather.prototype.getWeather = function(city, displayFunction) {
   }).fail(function(error) {
     $('.showWeather').text(error.responseJSON.message);
   });
-}
+};
 
 exports.weatherModule = Weather;
